@@ -1,0 +1,1 @@
+## Stack para rodar o Docker Ucp

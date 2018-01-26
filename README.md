@@ -1,6 +1,6 @@
 
-Projeto Docker - Git - Nginx
-# artigo-swarm-nginx
+# Projeto Docker UCP - Git - Nginx - Stack - Services
+## artigo-swarm-nginx
 
 #### Stack deploy usando o compose
 <pre>

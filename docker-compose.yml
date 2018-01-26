@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+   web-nginx:
+     image: concretecristiantrucco/bbmtalk
+     ports:
+       - "80"
+     restart: always

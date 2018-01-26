@@ -3,9 +3,11 @@ Projeto Docker - Git - Nginx
 # artigo-swarm-nginx
 
 #### Stack deploy usando o compose
-<p>
+<pre>
 docker stack deploy -c docker-compose.yml nginx
-</p>
-#### Escalar o serviço
+</pre>
 
+#### Escalar o serviço
+<pre>
 docker service scale nginx_web-nginx=3
+</pre>

@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+   web-nginx:
+     image: concretecristiantrucco/bbmtalk
+     ports:
+       - "80"
+     #Configs de Deploy do Service
+     deploy:
+      # Quantos containers vão ser stardados no Deploy
+       replicas: 4
+
+      # Parâmetros de Deploy
+       update_config:
+      #O Deploy será feito de 2 em 2 containers em paralelo
+         parallelism: 2
+
+        #O delay de entrega das imagens
+         delay: 5s
+      
+      #Politica de Restart
+       restart_policy:
+        # Os containers irão restartar em caso de falha
+        condition: on-failure    
